@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49894CDC-6839-42C0-9B12-150E430A31D7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>StatcioniAutobusave</RootNamespace>
+    <AssemblyName>StatcioniAutobusave</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v20.1, Version=20.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Booking list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking list.Designer.cs">
+      <DependentUpon>Booking list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bookingbill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookingbill.Designer.cs">
+      <DependentUpon>Bookingbill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill\Billmanagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill\Billmanagment.Designer.cs">
+      <DependentUpon>Billmanagment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill\Krijo_Bileten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill\Krijo_Bileten.Designer.cs">
+      <DependentUpon>Krijo_Bileten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus\BusEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus\BusEdit.Designer.cs">
+      <DependentUpon>BusEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bus\BusManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus\BusManager.Designer.cs">
+      <DependentUpon>BusManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Bill\Rezervo Bileten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill\Rezervo Bileten.Designer.cs">
+      <DependentUpon>Rezervo Bileten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Role\Role Managment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Role\Role Managment.Designer.cs">
+      <DependentUpon>Role Managment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Role\RoleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Role\RoleAdd.Designer.cs">
+      <DependentUpon>RoleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\UserAdd.Designer.cs">
+      <DependentUpon>UserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\Usermanagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\Usermanagment.Designer.cs">
+      <DependentUpon>Usermanagment.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bill\Billmanagment.resx">
+      <DependentUpon>Billmanagment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill\Krijo_Bileten.resx">
+      <DependentUpon>Krijo_Bileten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill\Krijo_Bileten.sq.resx">
+      <DependentUpon>Krijo_Bileten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Booking list.resx">
+      <DependentUpon>Booking list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bookingbill.resx">
+      <DependentUpon>Bookingbill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus\BusEdit.resx">
+      <DependentUpon>BusEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus\BusManager.resx">
+      <DependentUpon>BusManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.sq.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Form1.ar-DZ.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill\Rezervo Bileten.resx">
+      <DependentUpon>Rezervo Bileten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Role\Role Managment.resx">
+      <DependentUpon>Role Managment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Role\RoleAdd.resx">
+      <DependentUpon>RoleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Form1.sq-AL.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Form1.sq.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\UserAdd.resx">
+      <DependentUpon>UserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\Usermanagment.resx">
+      <DependentUpon>Usermanagment.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StatcioniAutobusave.BLL\StatcioniAutobusave.BLL.csproj">
+      <Project>{fabdcfb0-0311-4630-8e8e-5f20aaba1ef3}</Project>
+      <Name>StatcioniAutobusave.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StatcioniAutobusave.BO\StatcioniAutobusave.BO.csproj">
+      <Project>{70c692e8-e698-4b22-8fa6-7008cf41f9a0}</Project>
+      <Name>StatcioniAutobusave.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
